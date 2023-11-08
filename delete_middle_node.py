@@ -14,7 +14,7 @@ class LinkedList:
 
     def append(self, data):
         node = LinkedListNode(data)
-        if self.head is None:
+        if not self.head:
             self.head = node
         else:
             temp_node = self.head
