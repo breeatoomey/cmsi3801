@@ -25,7 +25,7 @@ class LinkedList:
     def __repr__(self):
         s = ""
         temp = self.head
-        while temp is not None:
+        while temp:
             s += str(temp.data)
             s += "->"
             temp = temp.next
