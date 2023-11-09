@@ -7,10 +7,7 @@ class LinkedListNode:
 class LinkedList:
     def __init__(self, items: list):
         self.head = None
-        self.items: list = items
-
-        for item in items:
-            self.append(item)
+        [self.append(item) for item in items]
 
     def append(self, data):
         node = LinkedListNode(data)
