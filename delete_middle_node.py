@@ -1,8 +1,8 @@
-
 class LinkedListNode:
-    def __init__(self, data = 0, next = None):
+    def __init__(self, data=0, next=None):
         self.data = data
         self.next = next
+
 
 class LinkedList:
     def __init__(self, items: list):
@@ -20,8 +20,8 @@ class LinkedList:
             temp_node = self.head
             while temp_node.next:
                 temp_node = temp_node.next
-            temp_node.next = node    
-    
+            temp_node.next = node
+
     def __repr__(self):
         s = ""
         temp = self.head
@@ -32,9 +32,11 @@ class LinkedList:
         s += "|"
         return s
 
+
 def delete_middle_node(node: LinkedListNode) -> None:
     node.data = node.next.data
     node.next = node.next.next
+
 
 l1 = LinkedList(list("abcdef"))
 node_c = l1.head.next.next
