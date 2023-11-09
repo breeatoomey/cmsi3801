@@ -28,8 +28,7 @@ class LinkedList:
         while temp:
             s += str(temp.data) + "->"
             temp = temp.next
-        s += "|"
-        return s
+        return s + "|"
 
 
 def delete_middle_node(node: LinkedListNode) -> None:
